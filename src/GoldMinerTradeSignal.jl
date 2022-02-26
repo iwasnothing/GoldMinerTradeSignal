@@ -1,3 +1,4 @@
+__precompile__()
 module GoldMinerTradeSignal
 using MarketData
 using DataFrames
