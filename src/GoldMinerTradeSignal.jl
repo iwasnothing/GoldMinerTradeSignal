@@ -85,4 +85,3 @@ end
 export getSignal,formatMsg
 
 end # module
-Base.compilecache("GoldMinerTradeSignal")
