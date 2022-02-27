@@ -7,6 +7,7 @@ using Dates
 using HTTP
 using JSON
 using CSV
+using Downloads
 
 function PriceToReturn(ta::TimeArray)
     cl = ta[:,:Close]
@@ -32,7 +33,8 @@ end
 
 
 function getSignal(parmfile)
-    parms_df = DataFrame(CSV.File(parmfile))
+    r = Downloads.download(parmfile)
+    parms_df = DataFrame(CSV.File(r))
     s1 = parms_df[1,1]
     s2 = parms_df[1,2]
     s3 = parms_df[1,3]
