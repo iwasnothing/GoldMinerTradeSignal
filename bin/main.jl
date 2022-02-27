@@ -1,4 +1,5 @@
 
+push!(LOAD_PATH, abspath(normpath(joinpath(@__DIR__, "../src/"))))
 using GoldMinerTradeSignal
 
 parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
