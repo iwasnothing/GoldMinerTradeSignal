@@ -32,9 +32,9 @@ end
 
 
 
-function getSignal()
-    #r = Downloads.download(parmfile)
-    parms_df = DataFrame(CSV.File("./GDX_parm.csv"))
+function getSignal(parmfile)
+    r = Downloads.download(parmfile)
+    parms_df = DataFrame(CSV.File(r))
     s1 = parms_df[1,1]
     s2 = parms_df[1,2]
     s3 = parms_df[1,3]
