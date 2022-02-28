@@ -56,9 +56,9 @@ function getSignal(parmfile)
 
     data = TimeSeries.rename(TimeSeries.merge(TimeSeries.merge(Rmnr,Rmkt),Rgld), 
         [:Rmnr,:Rmkt,:Rgld])
-
+    
+    @show data
     n,_ = size(miner)
-    @show miner
     @show values(miner[n][:Close])
     buy_price = values(miner[n][:Close])[1]
 
@@ -69,10 +69,12 @@ function getSignal(parmfile)
     DataFrames.rename!(df,:Rmnr_proxy_function => :buy_signal_proxy)
     transform!(df, :, [:Rmnr,:proxy] => (x1,x2) -> float(sell_signal_proxy.(x1,x2,std_mnr)) )
     DataFrames.rename!(df,:Rmnr_proxy_function => :sell_signal_proxy)
-
-    if df[1,:buy_signal_proxy] == 1.0 && df[1,:sell_signal_proxy] == 0.0
+    @show df
+    i,_ = size(df)
+    @show L
+    if df[i,:buy_signal_proxy] == 1.0 && df[i,:sell_signal_proxy] == 0.0
         signal = "BUY"
-    elseif df[1,:buy_signal_proxy] == 0.0 && df[1,:sell_signal_proxy] == 1.0
+    elseif df[i,:buy_signal_proxy] == 0.0 && df[i,:sell_signal_proxy] == 1.0
         signal = "SELL"
     else
         signal = "NONE"

@@ -8,13 +8,13 @@ m1 = formatMsg(getSignal(parmfile))
 parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
 @show parmfile
 m2 = formatMsg(getSignal(parmfile))
-
+msg = m1*"\n"*m2
+@show msg
 open("results.html", "w") do io
-    write(io, m1)
-    write(io, m2)
+    write(io, msg)
 end
 
-ENV["RESULTS"] = m1*"\n"*m2
+ENV["RESULTS"] = msg
 ENV["RESULTS_FILE"] = "results.html"
 
 
