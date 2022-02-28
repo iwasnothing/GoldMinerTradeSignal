@@ -14,7 +14,7 @@ open("results.html", "w") do io
     write(io, m2)
 end
 
-ENV["RESULTS"] = m
+ENV["RESULTS"] = m1*"\n"*m2
 ENV["RESULTS_FILE"] = "results.html"
 
 
