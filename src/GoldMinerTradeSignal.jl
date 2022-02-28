@@ -83,7 +83,7 @@ function getSignal(parmfile)
 end
 
 function formatMsg(s)
-    return "<H1>Asset: "*s["asset"]*", Action: "*s["signal"]*", order price: "*string(s["last_price"])
+    return "<H1>Asset: "*s["asset"]*", Action: "*s["signal"]*", order price: "*string(s["last_price"]) * "\n"
 end
 
 export getSignal,formatMsg
