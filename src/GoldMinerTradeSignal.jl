@@ -71,7 +71,7 @@ function getSignal(parmfile)
     DataFrames.rename!(df,:Rmnr_proxy_function => :sell_signal_proxy)
     @show df
     i,_ = size(df)
-    @show L
+    @show i
     if df[i,:buy_signal_proxy] == 1.0 && df[i,:sell_signal_proxy] == 0.0
         signal = "BUY"
     elseif df[i,:buy_signal_proxy] == 0.0 && df[i,:sell_signal_proxy] == 1.0
