@@ -14,7 +14,5 @@ open("results.html", "w") do io
     write(io, msg)
 end
 
-ENV["RESULTS"] = msg
-ENV["RESULTS_FILE"] = "results.html"
-
-
+commit = `git commit -am "new result"`
+run(commit)
