@@ -45,7 +45,7 @@ function getSignal(parmfile)
 
 
     t = Dates.now()
-    yopt = YahooOpt(period1 = t - Day(2), period2 = t)
+    yopt = YahooOpt(period1 = t - Day(5), period2 = t)
     gld = yahoo(s1,yopt)
     sp100 = yahoo(s2,yopt)
     miner = yahoo(s3,yopt)
