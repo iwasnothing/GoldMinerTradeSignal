@@ -14,5 +14,7 @@ open("results.html", "w") do io
     write(io, msg)
 end
 
-commit = `git commit -am "new result"`
-run(commit)
+commitcmd = `git commit -am "new result"`
+run(commitcmd)
+pushcmd = `git push origin master`
+run(pushcmd)
