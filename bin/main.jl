@@ -25,7 +25,7 @@ end
 function mainLoop()
     while true
         t = Dates.now()
-        if Hour(t) == Hour(14)
+        if Hour(t) == Hour(8)
             runDaily()
         end
         sleep(3600)
