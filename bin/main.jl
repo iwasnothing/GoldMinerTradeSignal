@@ -10,7 +10,8 @@ function runDaily()
     parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
     @show parmfile
     m2 = formatMsg(getSignal(parmfile))
-    msg = m1*m2
+    t = Dates.now()
+    msg = "<H1>"*string(t)*"\n"*m1*m2
     @show msg
     open("results.html", "w") do io
         write(io, msg)
