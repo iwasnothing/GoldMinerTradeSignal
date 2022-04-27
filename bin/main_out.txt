@@ -19,3 +19,7 @@ To github.com:iwasnothing/GoldMinerTradeSignal.git
  2 files changed, 5 insertions(+), 1 deletion(-)
 To github.com:iwasnothing/GoldMinerTradeSignal.git
    ecce476..5633635  master -> master
+[master eaa91ad] new result
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+To github.com:iwasnothing/GoldMinerTradeSignal.git
+   5633635..eaa91ad  master -> master
