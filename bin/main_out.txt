@@ -405,3 +405,7 @@ df = [master 92776ad] new result
  2 files changed, 364 insertions(+), 1 deletion(-)
 To github.com:iwasnothing/GoldMinerTradeSignal.git
    76df8fb..92776ad  master -> master
+[master b4236a3] new result
+ 2 files changed, 7 insertions(+), 4 deletions(-)
+To github.com:iwasnothing/GoldMinerTradeSignal.git
+   92776ad..b4236a3  master -> master
