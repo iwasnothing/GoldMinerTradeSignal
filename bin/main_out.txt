@@ -441,3 +441,360 @@ To github.com:iwasnothing/GoldMinerTradeSignal.git
  2 files changed, 7 insertions(+), 3 deletions(-)
 To github.com:iwasnothing/GoldMinerTradeSignal.git
    0131f92..aea08fc  master -> master
+[master 93702e8] new result
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+To github.com:iwasnothing/GoldMinerTradeSignal.git
+   aea08fc..93702e8  master -> master
+2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt        Rgld          proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64     Float64       Float64     Float64           Float64
+─────┼───────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-04-28   0.0204611   0.027959    0.00539832    0.0289172               0.0                0.0
+   2 │ 2022-04-29  -0.011861   -0.0387061  -0.000112977  -0.0331434               0.0                1.0
+i = 2
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-04-28 to 2022-04-29
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-04-28 │ 0.0742  │ 0.0306  │ 0.0604  │
+│ 2022-04-29 │ -0.0624 │ -0.0417 │ -0.0453 │
+values((miner[n])[:Close]) = [185.470001]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt        Rgld        proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64     Float64     Float64     Float64           Float64
+─────┼─────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-04-28   0.074233    0.0306352   0.0604439   0.0676851               0.0                0.0
+   2 │ 2022-04-29  -0.0624305  -0.0417115  -0.0453313  -0.0665924               0.0                0.0
+i = 2
+msg = "<H1>2022-05-02T08:28:21.963\n<H1>Asset: GDX, Action: SELL, order price: 34.990002\n<H1>Asset: NVDA, Action: NONE, order price: 185.470001\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-04-29 to 2022-05-02
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-04-29 │ -0.0119 │ -0.0387 │ -0.0001 │
+│ 2022-05-02 │ -0.0126 │ 0.0083  │ -0.0185 │
+values((miner[n])[:Close]) = [34.549999]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt        Rgld          proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64     Float64       Float64     Float64           Float64
+─────┼───────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-04-29  -0.011861   -0.0387061  -0.000112977  -0.0331434               0.0                1.0
+   2 │ 2022-05-02  -0.0125751   0.0082732  -0.0185405    -0.0108136               0.0                0.0
+i = 2
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-04-29 to 2022-05-02
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-04-29 │ -0.0624 │ -0.0417 │ -0.0453 │
+│ 2022-05-02 │ 0.0532  │ 0.0163  │ 0.013   │
+values((miner[n])[:Close]) = [195.330002]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt        Rgld        proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64     Float64     Float64     Float64           Float64
+─────┼─────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-04-29  -0.0624305  -0.0417115  -0.0453313  -0.0665924               0.0                0.0
+   2 │ 2022-05-02   0.0531622   0.0163262   0.012984    0.0224634               0.0                1.0
+i = 2
+msg = "<H1>2022-05-03T08:28:30.692\n<H1>Asset: GDX, Action: NONE, order price: 34.549999\n<H1>Asset: NVDA, Action: SELL, order price: 195.330002\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-02 to 2022-05-03
+│            │ Rmnr    │ Rmkt   │ Rgld    │
+├────────────┼─────────┼────────┼─────────┤
+│ 2022-05-02 │ -0.0126 │ 0.0083 │ -0.0185 │
+│ 2022-05-03 │ 0.0162  │ 0.003  │ 0.0026  │
+values((miner[n])[:Close]) = [35.110001]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt        Rgld         proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64     Float64      Float64      Float64           Float64
+─────┼───────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-02  -0.0125751  0.0082732   -0.0185405   -0.0108136                0.0                0.0
+   2 │ 2022-05-03   0.0162085  0.00304467   0.00264926   0.00506229               0.0                0.0
+i = 2
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-02 to 2022-05-03
+│            │ Rmnr   │ Rmkt   │ Rgld    │
+├────────────┼────────┼────────┼─────────┤
+│ 2022-05-02 │ 0.0532 │ 0.0163 │ 0.013   │
+│ 2022-05-03 │ 0.0035 │ 0.0022 │ -0.0007 │
+values((miner[n])[:Close]) = [196.020004]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt        Rgld          proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64     Float64       Float64     Float64           Float64
+─────┼───────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-02  0.0531622   0.0163264    0.012984     0.0224635                0.0                1.0
+   2 │ 2022-05-03  0.00353249  0.00221269  -0.000717985  0.00114383               0.0                0.0
+i = 2
+msg = "<H1>2022-05-04T08:28:39.413\n<H1>Asset: GDX, Action: NONE, order price: 35.110001\n<H1>Asset: NVDA, Action: NONE, order price: 196.020004\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-03 to 2022-05-04
+│            │ Rmnr   │ Rmkt   │ Rgld   │
+├────────────┼────────┼────────┼────────┤
+│ 2022-05-03 │ 0.0162 │ 0.003  │ 0.0026 │
+│ 2022-05-04 │ 0.0191 │ 0.0312 │ 0.0098 │
+values((miner[n])[:Close]) = [35.779999]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr       Rmkt        Rgld        proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64    Float64     Float64     Float64     Float64           Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-03  0.0162085  0.00304467  0.00264926  0.00506229               0.0                0.0
+   2 │ 2022-05-04  0.0190828  0.0311696   0.00982255  0.0358958                1.0                0.0
+i = 2
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-03 to 2022-05-04
+│            │ Rmnr   │ Rmkt   │ Rgld    │
+├────────────┼────────┼────────┼─────────┤
+│ 2022-05-03 │ 0.0035 │ 0.0022 │ -0.0007 │
+│ 2022-05-04 │ 0.0373 │ 0.0319 │ 0.0385  │
+values((miner[n])[:Close]) = [203.339996]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt        Rgld          proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64     Float64       Float64     Float64           Float64
+─────┼───────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-03  0.00353249  0.00221284  -0.000717985  0.00114395               0.0                0.0
+   2 │ 2022-05-04  0.0373431   0.0319248    0.0384804    0.0533068                0.0                0.0
+i = 2
+msg = "<H1>2022-05-05T08:28:48.113\n<H1>Asset: GDX, Action: BUY, order price: 35.779999\n<H1>Asset: NVDA, Action: NONE, order price: 203.339996\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 3×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-03 to 2022-05-05
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-03 │ 0.0162  │ 0.003   │ 0.0026  │
+│ 2022-05-04 │ 0.0191  │ 0.0312  │ 0.0098  │
+│ 2022-05-05 │ -0.0321 │ -0.0379 │ -0.0038 │
+values((miner[n])[:Close]) = [34.630001]
+df = 3×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt         Rgld         proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64      Float64      Float64      Float64           Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-03   0.0162085   0.00304467   0.00264926   0.00506229               0.0                0.0
+   2 │ 2022-05-04   0.0190828   0.0311696    0.00982255   0.0358958                1.0                0.0
+   3 │ 2022-05-05  -0.0321408  -0.0379004   -0.00381114  -0.0360051                0.0                0.0
+i = 3
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 3×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-03 to 2022-05-05
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-03 │ 0.0035  │ 0.0022  │ -0.0007 │
+│ 2022-05-04 │ 0.0373  │ 0.0319  │ 0.0385  │
+│ 2022-05-05 │ -0.0733 │ -0.0499 │ -0.048  │
+values((miner[n])[:Close]) = [188.440002]
+df = 3×7 DataFrame
+ Row │ timestamp   Rmnr         Rmkt         Rgld          proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64      Float64      Float64       Float64      Float64           Float64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-03   0.00353249   0.00221284  -0.000717985   0.00114395               0.0                0.0
+   2 │ 2022-05-04   0.0373431    0.0319252    0.0384804     0.0533072                0.0                0.0
+   3 │ 2022-05-05  -0.0732763   -0.0499172   -0.0480393    -0.0752897                0.0                0.0
+i = 3
+msg = "<H1>2022-05-06T08:28:57.103\n<H1>Asset: GDX, Action: NONE, order price: 34.630001\n<H1>Asset: NVDA, Action: NONE, order price: 188.440002\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 4×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-03 to 2022-05-06
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-03 │ 0.0162  │ 0.003   │ 0.0026  │
+│ 2022-05-04 │ 0.0191  │ 0.0312  │ 0.0098  │
+│ 2022-05-05 │ -0.0321 │ -0.0379 │ -0.0038 │
+│ 2022-05-06 │ -0.0113 │ -0.0041 │ 0.0017  │
+values((miner[n])[:Close]) = [34.240002]
+df = 4×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt         Rgld         proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64      Float64      Float64      Float64           Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-03   0.0162085   0.00304467   0.00264926   0.00506229               0.0                0.0
+   2 │ 2022-05-04   0.0190828   0.0311696    0.00982255   0.0358958                1.0                0.0
+   3 │ 2022-05-05  -0.0321408  -0.0379004   -0.00381114  -0.0360051                0.0                0.0
+   4 │ 2022-05-06  -0.0112619  -0.00408832   0.00165587  -0.00196531               0.0                0.0
+i = 4
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 4×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-03 to 2022-05-06
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-03 │ 0.0035  │ 0.0022  │ -0.0007 │
+│ 2022-05-04 │ 0.0373  │ 0.0319  │ 0.0385  │
+│ 2022-05-05 │ -0.0733 │ -0.0499 │ -0.048  │
+│ 2022-05-06 │ -0.009  │ -0.014  │ -0.0233 │
+values((miner[n])[:Close]) = [186.75]
+df = 4×7 DataFrame
+ Row │ timestamp   Rmnr         Rmkt         Rgld          proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64      Float64      Float64       Float64      Float64           Float64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-03   0.00353249   0.00221284  -0.000717985   0.00114395               0.0                0.0
+   2 │ 2022-05-04   0.0373431    0.0319252    0.0384804     0.0533072                0.0                0.0
+   3 │ 2022-05-05  -0.0732763   -0.0499172   -0.0480393    -0.0752898                0.0                0.0
+   4 │ 2022-05-06  -0.00896838  -0.0140471   -0.023344     -0.0282284                0.0                0.0
+i = 4
+msg = "<H1>2022-05-07T08:29:05.619\n<H1>Asset: GDX, Action: NONE, order price: 34.240002\n<H1>Asset: NVDA, Action: NONE, order price: 186.75\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 3×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-04 to 2022-05-06
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-04 │ 0.0191  │ 0.0312  │ 0.0098  │
+│ 2022-05-05 │ -0.0321 │ -0.0379 │ -0.0038 │
+│ 2022-05-06 │ -0.0113 │ -0.0041 │ 0.0017  │
+values((miner[n])[:Close]) = [34.240002]
+df = 3×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt         Rgld         proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64      Float64      Float64      Float64           Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-04   0.0190828   0.0311696    0.00982255   0.0358958                1.0                0.0
+   2 │ 2022-05-05  -0.0321408  -0.0379004   -0.00381114  -0.0360051                0.0                0.0
+   3 │ 2022-05-06  -0.0112619  -0.00408832   0.00165587  -0.00196531               0.0                0.0
+i = 3
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 3×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-04 to 2022-05-06
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-04 │ 0.0373  │ 0.0319  │ 0.0385  │
+│ 2022-05-05 │ -0.0733 │ -0.0499 │ -0.048  │
+│ 2022-05-06 │ -0.009  │ -0.014  │ -0.0233 │
+values((miner[n])[:Close]) = [186.75]
+df = 3×7 DataFrame
+ Row │ timestamp   Rmnr         Rmkt        Rgld        proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64      Float64     Float64     Float64     Float64           Float64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-04   0.0373431    0.0319252   0.0384804   0.0533072               0.0                0.0
+   2 │ 2022-05-05  -0.0732763   -0.0499172  -0.0480393  -0.0752898               0.0                0.0
+   3 │ 2022-05-06  -0.00896838  -0.0140473  -0.023344   -0.0282285               0.0                0.0
+i = 3
+msg = "<H1>2022-05-08T08:29:14.415\n<H1>Asset: GDX, Action: NONE, order price: 34.240002\n<H1>Asset: NVDA, Action: NONE, order price: 186.75\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-05 to 2022-05-06
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-05 │ -0.0321 │ -0.0379 │ -0.0038 │
+│ 2022-05-06 │ -0.0113 │ -0.0041 │ 0.0017  │
+values((miner[n])[:Close]) = [34.240002]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt         Rgld         proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64      Float64      Float64      Float64           Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-05  -0.0321408  -0.0379004   -0.00381114  -0.0360051                0.0                0.0
+   2 │ 2022-05-06  -0.0112619  -0.00408832   0.00165587  -0.00196531               0.0                0.0
+i = 2
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-05 to 2022-05-06
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-05 │ -0.0733 │ -0.0499 │ -0.048  │
+│ 2022-05-06 │ -0.009  │ -0.014  │ -0.0233 │
+values((miner[n])[:Close]) = [186.75]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr         Rmkt        Rgld        proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64      Float64     Float64     Float64     Float64           Float64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-05  -0.0732763   -0.0499172  -0.0480393  -0.0752898               0.0                0.0
+   2 │ 2022-05-06  -0.00896838  -0.0140473  -0.023344   -0.0282285               0.0                0.0
+i = 2
+msg = "<H1>2022-05-09T08:29:23.557\n<H1>Asset: GDX, Action: NONE, order price: 34.240002\n<H1>Asset: NVDA, Action: NONE, order price: 186.75\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-06 to 2022-05-09
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-06 │ -0.0113 │ -0.0041 │ 0.0017  │
+│ 2022-05-09 │ -0.0587 │ -0.0306 │ -0.0145 │
+values((miner[n])[:Close]) = [32.23]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt         Rgld         proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64      Float64      Float64      Float64           Float64
+─────┼────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-06  -0.0112619  -0.00408832   0.00165587  -0.00196531               0.0                0.0
+   2 │ 2022-05-09  -0.0587033  -0.0306261   -0.0144795   -0.0400449                1.0                0.0
+i = 2
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-06 to 2022-05-09
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-06 │ -0.009  │ -0.014  │ -0.0233 │
+│ 2022-05-09 │ -0.0924 │ -0.0429 │ -0.0696 │
+values((miner[n])[:Close]) = [169.5]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr         Rmkt        Rgld        proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64      Float64     Float64     Float64     Float64           Float64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-06  -0.00896838  -0.0140473  -0.023344   -0.0282285               0.0                0.0
+   2 │ 2022-05-09  -0.0923695   -0.0429334  -0.0695826  -0.0846588               0.0                0.0
+i = 2
+msg = "<H1>2022-05-10T08:29:32.116\n<H1>Asset: GDX, Action: BUY, order price: 32.23\n<H1>Asset: NVDA, Action: NONE, order price: 169.5\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-09 to 2022-05-10
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-09 │ -0.0587 │ -0.0306 │ -0.0145 │
+│ 2022-05-10 │ -0.0168 │ 0.0046  │ -0.0084 │
+values((miner[n])[:Close]) = [31.690001]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt         Rgld        proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64      Float64     Float64      Float64           Float64
+─────┼───────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-09  -0.0587033  -0.0306261   -0.0144795  -0.0400449                1.0                0.0
+   2 │ 2022-05-10  -0.0167545   0.00455891  -0.0084452  -0.00429172               0.0                0.0
+i = 2
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-09 to 2022-05-10
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-09 │ -0.0924 │ -0.0429 │ -0.0696 │
+│ 2022-05-10 │ 0.0381  │ 0.0098  │ 0.0209  │
+values((miner[n])[:Close]) = [175.949997]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt         Rgld        proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64      Float64     Float64     Float64           Float64
+─────┼──────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-09  -0.0923695  -0.0429333   -0.0695826  -0.0846586               0.0                0.0
+   2 │ 2022-05-10   0.0380531   0.00984414   0.0208911   0.022658                0.0                0.0
+i = 2
+msg = "<H1>2022-05-11T08:29:41.320\n<H1>Asset: GDX, Action: NONE, order price: 31.690001\n<H1>Asset: NVDA, Action: NONE, order price: 175.949997\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-10 to 2022-05-11
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-10 │ -0.0168 │ 0.0046  │ -0.0084 │
+│ 2022-05-11 │ -0.0013 │ -0.0192 │ 0.0082  │
+values((miner[n])[:Close]) = [31.65]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr         Rmkt         Rgld         proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64      Float64      Float64      Float64      Float64           Float64
+─────┼─────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-10  -0.0167545    0.00455891  -0.0084452   -0.00429172               0.0                0.0
+   2 │ 2022-05-11  -0.00126226  -0.0191917    0.00816713  -0.00858101               0.0                0.0
+i = 2
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 2×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-10 to 2022-05-11
+│            │ Rmnr    │ Rmkt    │ Rgld   │
+├────────────┼─────────┼─────────┼────────┤
+│ 2022-05-10 │ 0.0381  │ 0.0098  │ 0.0209 │
+│ 2022-05-11 │ -0.0548 │ -0.0318 │ -0.004 │
+values((miner[n])[:Close]) = [166.300003]
+df = 2×7 DataFrame
+ Row │ timestamp   Rmnr        Rmkt         Rgld         proxy       buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64     Float64      Float64      Float64     Float64           Float64
+─────┼───────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-10   0.0380531   0.00984406   0.0208911    0.0226579               0.0                0.0
+   2 │ 2022-05-11  -0.0548451  -0.0318151   -0.00395515  -0.0293019               0.0                0.0
+i = 2
+msg = "<H1>2022-05-12T08:29:49.492\n<H1>Asset: GDX, Action: NONE, order price: 31.65\n<H1>Asset: NVDA, Action: NONE, order price: 166.300003\n"
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/GDX_parm.csv"
+data = 3×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-10 to 2022-05-12
+│            │ Rmnr    │ Rmkt    │ Rgld    │
+├────────────┼─────────┼─────────┼─────────┤
+│ 2022-05-10 │ -0.0168 │ 0.0046  │ -0.0084 │
+│ 2022-05-11 │ -0.0013 │ -0.0192 │ 0.0082  │
+│ 2022-05-12 │ -0.0464 │ -0.004  │ -0.0153 │
+values((miner[n])[:Close]) = [30.18]
+df = 3×7 DataFrame
+ Row │ timestamp   Rmnr         Rmkt         Rgld         proxy        buy_signal_proxy  sell_signal_proxy
+     │ Date        Float64      Float64      Float64      Float64      Float64           Float64
+─────┼─────────────────────────────────────────────────────────────────────────────────────────────────────
+   1 │ 2022-05-10  -0.0167545    0.00455891  -0.0084452   -0.00429172               0.0                0.0
+   2 │ 2022-05-11  -0.00126226  -0.0191917    0.00816713  -0.00858101               0.0                0.0
+   3 │ 2022-05-12  -0.0464455   -0.00400817  -0.0153339   -0.0181964                1.0                0.0
+i = 3
+parmfile = "https://iwasnothing.github.io/GoldMinerTradeSignal/NVDA_parm.csv"
+data = 3×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-05-10 to 2022-05-12
+│            │ Rmnr    │ Rmkt    │ Rgld   │
+├────────────┼─────────┼─────────┼────────┤
+│ 2022-05-10 │ 0.0381  │ 0.0098  │ 0.0209 │
+│ 2022-05-11 │ -0.0548 │ -0.0318 │ -0.004 │
+│ 2022-05-12 │ -0.0274 │ 0.0006  │ 0.002  │
+values((miner[n])[:Close]) = [161.75]
+df = 
