@@ -801,3 +801,7 @@ df = [master 6495886] new result
  2 files changed, 360 insertions(+), 3 deletions(-)
 To github.com:iwasnothing/GoldMinerTradeSignal.git
    93702e8..6495886  master -> master
+[master 27b7c0e] new result
+ 2 files changed, 7 insertions(+), 4 deletions(-)
+To github.com:iwasnothing/GoldMinerTradeSignal.git
+   6495886..27b7c0e  master -> master
