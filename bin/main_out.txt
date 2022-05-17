@@ -809,3 +809,7 @@ To github.com:iwasnothing/GoldMinerTradeSignal.git
  2 files changed, 5 insertions(+), 1 deletion(-)
 To github.com:iwasnothing/GoldMinerTradeSignal.git
    27b7c0e..d405867  master -> master
+[master f45d80d] new result
+ 2 files changed, 5 insertions(+), 1 deletion(-)
+To github.com:iwasnothing/GoldMinerTradeSignal.git
+   d405867..f45d80d  master -> master
