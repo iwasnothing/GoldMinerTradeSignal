@@ -1196,4 +1196,7 @@ df = 2×7 DataFrame
    1 │ 2022-05-20  -0.025111   -0.00297492  0.0130039  0.00649928               1.0                0.0
    2 │ 2022-05-23   0.0122199   0.0159102   0.0408565  0.0417204                1.0                0.0
 i = 2
-msg = 
+msg = [master 89a858f] new result
+ 2 files changed, 363 insertions(+), 3 deletions(-)
+To github.com:iwasnothing/GoldMinerTradeSignal.git
+   a51770a..89a858f  master -> master
