@@ -1596,4 +1596,7 @@ data = 3×3 TimeSeries.TimeArray{Float64, 2, Date, Matrix{Float64}} 2022-06-01 t
 │ 2022-06-02 │ 0.0694  │ 0.0269  │ 0.0299  │
 │ 2022-06-03 │ -0.0445 │ -0.0247 │ -0.0291 │
 values((miner[n])[:Close]) = [187.199997]
-df = 
+df = [master 59c15da] new result
+ 2 files changed, 358 insertions(+), 1 deletion(-)
+To github.com:iwasnothing/GoldMinerTradeSignal.git
+   17dad26..59c15da  master -> master
