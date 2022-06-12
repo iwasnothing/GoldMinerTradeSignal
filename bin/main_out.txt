@@ -1620,3 +1620,7 @@ To github.com:iwasnothing/GoldMinerTradeSignal.git
  2 files changed, 7 insertions(+), 3 deletions(-)
 To github.com:iwasnothing/GoldMinerTradeSignal.git
    af0a90e..8d49767  master -> master
+[master adf3fe0] new result
+ 2 files changed, 7 insertions(+), 3 deletions(-)
+To github.com:iwasnothing/GoldMinerTradeSignal.git
+   8d49767..adf3fe0  master -> master
